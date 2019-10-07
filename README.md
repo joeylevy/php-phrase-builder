@@ -15,47 +15,10 @@ I used it to create a bunch of 1000+ block of phrases for adwords.
 
 ## Usage
 
-//Set up 2 arrays in PHP
-<?php
-require_once('functions.php');
-$cities = [
-    'gilbert',
-    'winston-salem',
-    'north las vegas',
-    'norfolk',
-    'chesapeake',
-    'garland',
-    'irving',
-    'hialeah',
-    'fremont',
-    'boise',
-    'richmond',
-    'baton rouge',
-    'spokane',
-];
+Set up 2 arrays in PHP
 
-$az_cities = [
-    'phoenix',
-    'chandler',
-    'mesa',
-    'tucson',
-    'glendale',
-    'scottsdale',
-    'gilbert',
-    'tempe',
-    'peoria',
-    'surprise',
-    'yuma',
-    'avondale',
-    'flagstaff',
-    ];
+Create phrase
 
+combine phrases using function
 
-//create phrase
-$the_phrase = 'Distance between {1} and {2}';
-
-//use functions to create phrases and convert to CSV file
-$final = combine_arrays($az_cities, $cities, $the_phrase);
-
-//optional - convert to csv. Other display options might be better for some people.
-create_csv_from_array($final);
+display or create csv with resulting csv
